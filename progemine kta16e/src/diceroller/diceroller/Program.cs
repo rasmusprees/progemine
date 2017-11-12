@@ -1,13 +1,16 @@
-﻿namespace DiceRoller
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace DiceRoller
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
+    
 
     public class Program
     {
         public static void Main(string[] args)
         {
+            
             Console.WriteLine("> /roll 3d6 2d8");
             Console.WriteLine();
 
@@ -24,6 +27,7 @@
             Console.WriteLine($"Roll total: {diceRolls.Sum(x => x.Value)}");
             Console.WriteLine();
             Console.Write("> ");
+            
 
             /*
             Dice d6 = Dice.D6;
@@ -50,8 +54,8 @@
             Console.WriteLine();
 
             Console.WriteLine($"Roll total: { total }");
-            */        
-    
+            */
+
 
             Console.WriteLine();
             Console.WriteLine(">");

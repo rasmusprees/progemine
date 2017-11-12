@@ -8,6 +8,7 @@ namespace DiceRoller
 
     public class Dice
     {
+        
         public int Sides { get; }
 
         public string Description { get; }
@@ -22,11 +23,14 @@ namespace DiceRoller
 
         public static Dice D6 => new Dice(6, "d6");
 
-        public static Dice D8 => new Dice(6, "d8");
+        public static Dice D8 => new Dice(8, "d8");
 
         public int Roll()
             {
                 return this.Random.Next(1, this.Sides + 1);
+
             }
-        }
+            
+
+    }
     }
