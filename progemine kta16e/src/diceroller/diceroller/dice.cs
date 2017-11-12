@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace diceroller
+namespace DiceRoller
 {
     using System;
 
