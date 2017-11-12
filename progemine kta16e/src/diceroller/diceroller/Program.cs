@@ -9,12 +9,14 @@ namespace diceroller
             Console.WriteLine("> /roll 3d6 2d8");
             Console.WriteLine();
 
-            var random = new Random();
+            dice dice = new dice();
+
             var total = 0;
 
             for (var i = 0; i < 3; i++)
             {
-                var roll = random.Next(1, 7);
+                
+                var roll = dice.Roll(6);
                 total += roll;
 
                 Console.WriteLine($"1d6: { roll }");
@@ -22,7 +24,7 @@ namespace diceroller
 
             for (var i = 0; i < 2; i++)
             {
-                var roll = random.Next(1, 9);
+                var roll = dice.Roll(8);
                 total += roll;
 
                 Console.WriteLine($"1d8: { roll }");
