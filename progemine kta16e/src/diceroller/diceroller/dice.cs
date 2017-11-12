@@ -14,12 +14,17 @@ namespace diceroller
 
         private Random Random { get; } = new Random();
 
-        public Dice(int sides, string description)
+        private Dice(int sides, string description)
         {
             this.Sides = sides;
             this.Description = description;
         }
-            public int Roll()
+
+        public static Dice D6 => new Dice(6, "d6");
+
+        public static Dice D8 => new Dice(6, "d8");
+
+        public int Roll()
             {
                 return this.Random.Next(1, this.Sides + 1);
             }
